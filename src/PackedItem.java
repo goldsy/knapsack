@@ -34,6 +34,7 @@ public class PackedItem {
     		if ((Knapsack.sackInventory[prevCapacity].GetTotalValue() + Knapsack.items[0].GetValue()) > totalValue) {
     			prevPackedItem = Knapsack.sackInventory[prevCapacity];
                 totalValue = Knapsack.sackInventory[prevCapacity].GetTotalValue() + Knapsack.items[0].GetValue();
+                item = Knapsack.items[0];
     		}
             
     		// FINISH ME.
